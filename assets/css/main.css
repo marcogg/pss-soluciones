@@ -336,11 +336,11 @@ hr {
 /* ==========================================================================
   8. Features Section Style
    ========================================================================== */
-#features {
+#nosotros {
   background: #fff;
 }
 
-#features .icon {
+#nosotros .icon {
   display: inline-block;
   width: 60px;
   height: 60px;
@@ -350,19 +350,19 @@ hr {
   z-index: 1;
 }
 
-#features .content-left span {
+#nosotros .content-left span {
   float: right;
 }
 
-#features .content-left .text {
+#nosotros .content-left .text {
   text-align: right;
 }
 
-#features .content-right span {
+#nosotros .content-right span {
   float: left;
 }
 
-#features .box-item {
+#nosotros .box-item {
   box-shadow: 0 0 12px #F4F4F4;
   padding: 15px;
   line-height: 22px;
@@ -376,7 +376,7 @@ hr {
   top: 0;
 }
 
-#features .box-item .icon {
+#nosotros .box-item .icon {
   text-align: center;
   margin: 12px;
   -webkit-transition: all 0.2s linear;
@@ -385,7 +385,7 @@ hr {
   transition: all 0.2s linear;
 }
 
-#features .box-item .icon i {
+#nosotros .box-item .icon i {
   color: #97181f;
   font-size: 30px;
   -webkit-transition: all 0.2s linear;
@@ -394,7 +394,7 @@ hr {
   transition: all 0.2s linear;
 }
 
-#features .box-item .text h4 {
+#nosotros .box-item .text h4 {
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
@@ -405,24 +405,24 @@ hr {
   transition: all 0.2s linear;
 }
 
-#features .box-item .text p {
+#nosotros .box-item .text p {
   font-size: 14px;
   line-height: 26px;
 }
 
-#features .box-item:hover {
+#nosotros .box-item:hover {
   box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
 }
 
-#features .box-item:hover h4 {
+#nosotros .box-item:hover h4 {
   color: #97181f;
 }
 
-#features .show-box {
+#nosotros .show-box {
   margin-top: 50px;
 }
 
-#features .show-box img {
+#nosotros .show-box img {
   width: 100%;
 }
 
@@ -475,6 +475,15 @@ hr {
 
 .services-item .services-content h3 a:hover {
   color: #97181f;
+}
+
+.services-item .services-content {
+  padding: clamp(24px, 5%, 32px);
+}
+
+.services-content li {
+  text-align: left;
+  list-style: circle;
 }
 
 .services-item:hover {
@@ -759,13 +768,13 @@ hr {
 3. Hero Area
 ========================================================================== */
 #hero-area {
-  background-image: url(../img/hero-area.svg);
+  /* background-image: url(../img/hero-area.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; */
   padding: 180px 0 80px;
 }
 
@@ -885,29 +894,29 @@ hr {
 }
 
 /* ==========================================================================
-   Pricing Table Style
+   mantenimiento Table Style
    ========================================================================== */
-#pricing {
+#mantenimiento {
   text-align: center;
 }
 
-#pricing .title {
+#mantenimiento .title {
   padding-top: 20px;
 }
 
-#pricing .title h3 {
+#mantenimiento .title h3 {
   text-transform: uppercase;
   color: #333;
   font-size: 18px;
 }
 
-#pricing .title .month-plan {
+#mantenimiento .title .month-plan {
   font-size: 16px;
   font-weight: 500;
   color: #333;
 }
 
-#pricing .table {
+#mantenimiento .table {
   margin-top: 15px;
   padding: 30px;
   border-radius: 4px;
@@ -920,7 +929,13 @@ hr {
   transition: all .3s linear;
 }
 
-#pricing .table .icon-box {
+@media screen and (min-width: 768px) {
+  #mantenimiento .table {
+    min-height: 460px;
+  }
+}
+
+#mantenimiento .table .icon-box {
   position: relative;
   width: 80px;
   height: 80px;
@@ -936,7 +951,7 @@ hr {
   transition: all .3s linear;
 }
 
-#pricing .table .icon-box i {
+#mantenimiento .table .icon-box i {
   color: #97181f;
   line-height: 80px;
   font-size: 30px;
@@ -947,12 +962,12 @@ hr {
   transition: all .3s linear;
 }
 
-#pricing .table .pricing-header {
+#mantenimiento .table .pricing-header {
   position: relative;
   text-align: center;
 }
 
-#pricing .table .pricing-header .price-value {
+#mantenimiento .table .pricing-header .price-value {
   font-size: 24px;
   color: #97181f;
   position: relative;
@@ -960,62 +975,62 @@ hr {
   font-weight: 700;
 }
 
-#pricing .table .pricing-header .price-value sup {
+#mantenimiento .table .pricing-header .price-value sup {
   font-size: 16px;
   font-weight: 500;
   top: -18px;
 }
 
-#pricing .table .pricing-header .price-value span {
+#mantenimiento .table .pricing-header .price-value span {
   font-size: 15px;
   color: #abacae;
   font-weight: 400;
 }
 
-#pricing .table .description {
+#mantenimiento .table .description {
   text-align: center;
   padding: 0px 50px;
   margin-bottom: 20px;
 }
 
-#pricing .table .description li {
+#mantenimiento .table .description li {
   font-size: 14px;
   font-weight: 400;
   color: #abacae;
   padding: 4px 0;
 }
 
-#pricing .table .description li:last-child {
+#mantenimiento .table .description li:last-child {
   border-bottom: none;
 }
 
-#pricing .table:hover {
+#mantenimiento .table:hover {
   background: #ffffff;
   box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
 }
 
-#pricing .table:hover .icon-box {
+#mantenimiento .table:hover .icon-box {
   background: #97181f;
 }
 
-#pricing .table:hover .icon-box i {
+#mantenimiento .table:hover .icon-box i {
   color: #fff;
 }
 
-#pricing #active-tb {
+#mantenimiento #active-tb {
   background: #ffffff;
   box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
 }
 
-#pricing #active-tb .icon-box {
+#mantenimiento #active-tb .icon-box {
   background: #97181f;
 }
 
-#pricing #active-tb .icon-box i {
+#mantenimiento #active-tb .icon-box i {
   color: #fff;
 }
 
-#pricing .active {
+#mantenimiento .active {
   z-index: 99999;
 }
 
@@ -1430,4 +1445,100 @@ textarea {
 
 .social-icon .google:hover {
   background: #CE332A;
+}
+
+/* MANTENIMIENTO */
+
+.mantto-header {
+  background: url(../img/mantenimiento-industrial-comercial_bco.jpg) no-repeat center center;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
+  background-attachment: scroll;
+}
+
+.gradient-mantto {
+  background: linear-gradient(#fff, transparent);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.text-red {
+  color: #97181f;
+}
+
+.text-hovered {
+  position: relative;
+  z-index: 10
+}
+
+.insumos-header {
+  background: url(../img/insumos-hero.jpg) no-repeat center center;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-attachment: scroll;
+}
+
+.gradient-insumos {
+  background: linear-gradient(#fff, transparent);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.client-logo {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  padding: 30px 0;
+  max-width: 200px;
+}
+
+/* Contact */
+#contact {
+  padding-top: 180px;
+}
+
+.contact-form input {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.button button[type="submit"] {
+  background: #97181f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.button button[type="submit"]:hover {
+  background: #fff;
+  color: #97181f;
+  border: 1px solid #97181f;
+}
+
+.button button[type="submit"]:focus {
+  outline: none;
 }
