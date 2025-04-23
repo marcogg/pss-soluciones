@@ -156,11 +156,16 @@
   }
 
   .navbar-brand img {
-    margin: 5px 0;
+    width: 100px;
+  }
+
+  .carousel {
+    position: relative;
+    top: 50px;
   }
 
   .top-nav-collapse .navbar-brand img {
-    margin-top: 10px;
+    width: 100px;
   }
 
   .intro-img {
