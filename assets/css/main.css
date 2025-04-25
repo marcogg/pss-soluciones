@@ -1574,3 +1574,14 @@ textarea {
 .button button[type="submit"]:focus {
   outline: none;
 }
+
+/* PROMOS */
+.legales {
+  line-height: 0.6rem;
+  font-size: 0.75rem;
+  margin: 16px 0
+}
+
+.card-container {
+  /* padding: 4%; */
+}
