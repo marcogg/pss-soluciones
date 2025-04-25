@@ -70,10 +70,10 @@
       responsiveRefreshRate: true,
       responsive: {
         0: {
-          items: 2
+          items: 1
         },
         768: {
-          items: 2
+          items: 1
         },
         960: {
           items: 2
