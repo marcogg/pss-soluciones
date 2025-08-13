@@ -16,13 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Email configuration
     $to = "marcogarcia.gon@gmail.com"; // Replace with your email address
-    $subject = "Nueva descarga de guia - Grupo Relsa";
+    $subject = "Nuevo registro: psssoluciones.com";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     // Email body
-    $message = "Una nueva persona ha descargado la guia:\n\n";
+    $message = "Nuevo contacto\n\n";
     $message .= "Nombre: $name\n";
     $message .= "Teléfono: $phone\n";
     $message .= "Correo electrónico: $email\n";

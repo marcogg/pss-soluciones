@@ -145,3 +145,17 @@
   });
 
 }(jQuery));
+
+//TOGGLE CATEGORIES
+
+const toggleCategories = () => {
+  // event.preventDefault()
+  // let el = document.querySelector('#toggle');
+  // el.addEventListener('click', () => {
+  let categories = document.querySelector('.sub-categories');
+  if (categories.classList.contains('active')) {
+    categories.classList.remove('active');
+  } else {
+    categories.classList.add('active');
+  }
+}

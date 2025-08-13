@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sanshttps://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap');
 
 html {
@@ -377,6 +377,7 @@ hr {
   top: 0;
 }
 
+
 #nosotros .box-item .icon {
   text-align: center;
   margin: 12px;
@@ -413,6 +414,7 @@ hr {
 
 #nosotros .box-item:hover {
   box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+  cursor: pointer !important;
 }
 
 #nosotros .box-item:hover h4 {
@@ -442,8 +444,8 @@ hr {
 
 .services-item .icon {
   border: 1px solid #f1f1f1;
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin: 0 auto;
   transition: all 0.3s ease-in-out 0s;
@@ -464,28 +466,41 @@ hr {
 
 .services-item .services-content h3 {
   margin-top: 10px;
-  font-weight: 500;
+  font-weight: bolder;
   /* text-transform: uppercase; */
   margin-bottom: 10px;
   line-height: 1rem;
 }
 
+.services-item .services-content h3,
 .services-item .services-content h3 a {
   font-size: 16px;
   color: #585b60;
 }
 
+.services-item .services-content h3 a {
+  font-weight: bold;
+}
+
+.services-item .services-content h3,
 .services-item .services-content h3 a:hover {
   color: #97181f;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .services-item .services-content {
   padding: clamp(8px, 4%, 16px);
+  min-height: 220px;
 }
 
 .services-content li {
-  text-align: left;
-  list-style: circle;
+  text-align: center;
+  list-style: none;
+}
+
+.services-content h3 {
+  font-weight: bold;
 }
 
 .services-item:hover {
@@ -1371,12 +1386,19 @@ textarea {
   font-size: 22px;
   width: 32px;
   vertical-align: middle;
-  height: 36px;
+  height: 64px;
   text-align: center;
   display: inline-block;
   float: left;
   margin-right: 5px;
   line-height: 32px;
+}
+
+.footer-area .address li i.lni-phone-handset {
+  margin-right: 16px;
+  font-size: 18px;
+  position: relative;
+  left: 6px;
 }
 
 .footer-area #subscribe-form {
@@ -1582,6 +1604,42 @@ textarea {
   margin: 16px 0
 }
 
-.card-container {
-  /* padding: 4%; */
+
+.whatsapp-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.sub-categories {
+  display: none;
+}
+
+.sub-categories ul {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.active {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-toggle {
+  width: 30%;
+  display: block;
+  margin: auto;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.display-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
