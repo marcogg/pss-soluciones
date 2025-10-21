@@ -170,24 +170,24 @@
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
           <div class="content-left">
             <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
-              <span class="icon">
+              <!-- <span class="icon">
                 <i class="lni-rocket"></i>
-              </span>
+              </span> -->
               <div class="text">
-                <h4>Misión</h4>
-                <p>Brindar seguridad y confianza a los clientes mediante un servicio y atención de calidad en el
-                  proceso
-                  de postventa, desarrollando proyectos de gran calidad en el mercado</p>
+                <h4 id="mision">Misión</h4>
+                <p id="mision-text" class="display-none">Brindar seguridad y confianza a los clientes mediante un
+                  servicio y atención de calidad en el proceso de la pre y postventa.</p>
               </div>
             </div>
             <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
-              <span class="icon">
+              <!-- <span class="icon">
                 <i class="lni-search"></i>
-              </span>
+              </span> -->
               <div class="text">
-                <h4>Visión</h4>
-                <p>Ser una empresa altamente eficiente y reconocida a nivel nacional por el buen manejo de recursos,
-                  comprometida con la mejora continua y el trabajo en equipo.</p>
+                <h4 id="vision">Visión</h4>
+                <p id="vision-text" class="display-none">Ser una empresa eficiente y reconocida a nivel nacional,
+                  enfocada en
+                  mejora continua.</p>
               </div>
             </div>
           </div>
@@ -201,24 +201,24 @@
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
           <div class="content-right">
             <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
-              <span class="icon">
+              <!-- <span class="icon">
                 <i class="lni-heart-pulse"></i>
-              </span>
+              </span> -->
               <div class="text">
-                <h4>Valores</h4>
-                <p>PSS Soluciones se rige por principios como honestidad, lealtad, compromiso, integridad, respeto y
-                  responsabilidad, asegurando transparencia y rectitud en todas sus operaciones.</p>
+                <h4 id="valores">Valores</h4>
+                <p id="valores-text" class="display-none">Nos regimos por principios como la honestidad, lealtad,
+                  compromiso, integridad, respeto y responsabilidad, asegurando transparencia y rectitud en todas sus
+                  operaciones.</p>
               </div>
             </div>
             <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
-              <span class="icon">
+              <!-- <span class="icon">
                 <i class="lni-shield"></i>
-              </span>
+              </span> -->
               <div class="text">
-                <h4>Compromiso con la seguridad</h4>
-                <p>Garantizar una adecuada y oportuna prevención de riesgos laborales, accidentes y enfermedades
-                  ocupacionales, mediante un sistema de seguridad y mejoramiento continuo de los procedimientos y
-                  condiciones de trabajo.</p>
+                <h4 id="compromiso-seguridad">Compromiso con la seguridad</h4>
+                <p id="compromiso-seguridad-text" class="display-none">Prevención de riesgos con sistemas de seguridad y
+                  mejora constante.</p>
               </div>
             </div>
           </div>
@@ -429,6 +429,39 @@
     <div class="loader" id="loader-1"></div>
   </div>
   <!-- End Preloader -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mision = document.getElementById("mision");
+      const vision = document.getElementById("vision");
+      const valores = document.getElementById("valores");
+      const compromisoSeguridad = document.getElementById("compromiso-seguridad");
+
+      const misionText = document.getElementById("mision-text");
+      const visionText = document.getElementById("vision-text");
+      const valoresText = document.getElementById("valores-text");
+      const compromisoSeguridadText = document.getElementById("compromiso-seguridad-text");
+
+      mision.addEventListener("click", function () {
+        misionText.classList.toggle("display-none");
+        misionText.classList.add("block", "wow", "fadeInLeft");
+      })
+
+      vision.addEventListener("click", function () {
+        visionText.classList.toggle("display-none");
+        visionText.classList.add("block", "wow", "fadeInLeft");
+      })
+
+      valores.addEventListener("click", function () {
+        valoresText.classList.toggle("display-none");
+        valoresText.classList.add("block", "wow", "fadeInRight");
+      })
+      compromisoSeguridad.addEventListener("click", function () {
+        compromisoSeguridadText.classList.toggle("display-none");
+        compromisoSeguridadText.classList.add("block", "wow", "fadeInRight");
+      })
+    });
+  </script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="assets/js/jquery-min.js"></script>
